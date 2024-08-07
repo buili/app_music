@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background_play_nhac"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity.PlayNhacActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarplaynhac"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        app:title="Play Nhạc" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerplaynhac"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textviewtimesong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="00::00"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+
+                android:id="@+id/seekbarsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9" />
+
+            <TextView
+                android:id="@+id/textviewtotaltimesong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="00::00"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imagebuttonsuffle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/suffle_icon" />
+
+            <ImageButton
+                android:id="@+id/imagebuttonpre"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/skip_previous_circle_icon" />
+
+            <ImageButton
+                android:id="@+id/imagebuttonplay"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/play_70" />
+
+            <ImageButton
+                android:id="@+id/imagebuttonnext"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/skip_next_circle_icon" />
+
+            <ImageButton
+                android:id="@+id/imagebuttrepeat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/repeat_50" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

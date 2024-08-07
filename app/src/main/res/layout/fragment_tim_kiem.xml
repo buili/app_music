@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayoutsearchbaihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarsearchbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Tìm Kiếm" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewsearchbaihat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayoutsearchbaihat" />
+
+    <TextView
+        android:id="@+id/textviewkhongcodulieu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayoutsearchbaihat"
+        android:gravity="center"
+        android:text="Không có dữ liệu bài hát"
+        android:textColor="@color/do1"
+        android:textSize="35sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:layout_alignBottom="@+id/imageviewbackgroundbanner"
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/noanh"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/imageviewbanner"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:textSize="17sp"
+            android:text="Lo yêu mất rồi"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/textviewtitlebannerbaihat"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:layout_alignTop="@+id/imageviewbanner"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:layout_below="@+id/textviewtitlebannerbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Chào mừng bạn đến với ca sĩ hot nhất hiện nay và hơn thế nữa"
+                android:maxLines="2"
+                android:textSize="13sp"
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

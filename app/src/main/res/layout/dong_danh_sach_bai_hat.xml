@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textviewdanhsachindex"
+            android:text="1"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textviewtenbaihat"
+            android:textSize="20sp"
+            android:text="Tên ca khúc"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/textviewdanhsachindex"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textviewtencasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewtenbaihat"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/textviewdanhsachindex"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Ca sĩ"
+            android:textColor="@color/casi"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icons8_heart_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageviewluotthichdanhsachbaihat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

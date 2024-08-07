@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tab">#AE12BF</color>
+    <color name="xanh">#2196F3</color>
+    <color name="do1">#BC0E31</color>
+    <color name="batdau">#20fdfdfd</color>
+    <color name="ketthuc">#d00b0b0b</color>
+    <color name="moreplaylist">#D0958686</color>
+    <color name="xemthem">#913677</color>
+    <color name="casi">#9e9797</color>
+    <color name="toolbar">#00BCD4</color>
+</resources>
